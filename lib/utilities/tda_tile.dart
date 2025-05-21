@@ -3,6 +3,11 @@
 import 'package:flutter/material.dart';
 
 class TdaTile extends StatelessWidget {
+  final String taskName;
+  final bool taskCompleted;
+  Function(bool?)? onChanged;
+
+
   const TdaTile({super.key});
 }
 
