@@ -8,8 +8,22 @@ class TdaTile extends StatelessWidget {
 
 @override
 Widget build(BuildContext context) {
-  return Container(
-    child: Text('Prepare a List'),
-    decoration: BoxDecoration(color: Colors.blueGrey),
+  return Padding(
+    padding: const EdgeInsets.all(27.0),
+    child: Container(
+      padding: const EdgeInsets.all(24),
+      child: Row(
+        children: [
+          // A CheckBox
+          Checkbox(value: value, onChanged: onChanged)
+
+
+          // Task Name / Description
+          Text('Prepare a List'),
+        ],
+      ),
+      decoration: BoxDecoration(color: Colors.blueGrey),
+      borderRadius: BorderRadius.circular(13),
+    ),
   );
 }
