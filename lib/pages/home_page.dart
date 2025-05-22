@@ -21,7 +21,16 @@ class _HomePageState extends State<HomePage> {
       ),
       body: ListView(
         children: [
-          TdaTile(),
+          TdaTile(
+            taskName: 'Task 1',
+            taskCompleted: true,
+            onChanged: (value) {},
+          ),
+          TdaTile(
+            taskName: 'Task 2',
+            taskCompleted: false,
+            onChanged: () {},
+          )
         ],
       ),
     );
