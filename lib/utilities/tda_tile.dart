@@ -10,9 +10,9 @@ class TdaTile extends StatelessWidget {
 
   const TdaTile({
     super.key,
-    required.taskName,
-    required.taskCompleted,
-    required.onChanged,
+    required this.taskName,
+    required this.taskCompleted,
+    required this.onChanged,
     });
 }
 
@@ -30,11 +30,18 @@ Widget build(BuildContext context) {
           Checkbox(
             value: taskCompleted, 
             onChanged: onChanged,
+            activeColor: Colors.black,
             ),
 
 
           // Task Name || Description
-          Text(taskName),
+          Text(
+            taskName,
+            style: TextStyle(
+              decoration: taskCompleted ? TextDecoration.lineThrough : TextDecoration.none,
+            ),
+            
+            ),
         ],
       ),
     ),
