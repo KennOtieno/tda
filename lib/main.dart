@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
+    // This widget is the root of my app. I can't explain this, but it just works!
     throw UnimplementedError();
   }
 }
